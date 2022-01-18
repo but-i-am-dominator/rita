@@ -240,7 +240,7 @@ __install_zeek() {
                 "https://download.opensuse.org/repositories/security:/zeek/xUbuntu_$(lsb_release -rs)/Release.key"
                 ;;
             Debian)
-                __install_packages cmake make gcc g++ flex bison libpcap-dev libssl-dev python3 python3-dev python3-git python3-semantic-version swig zlib1g-dev gpg
+                __install_packages gpg
                 __add_deb_repo  "deb http://download.opensuse.org/repositories/security:/zeek/$_Debian_Release/ /" \
                 "security:zeek" \
                 "https://download.opensuse.org/repositories/security:zeek/$_Debian_Release/Release.key"
