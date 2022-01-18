@@ -246,6 +246,7 @@ __install_zeek() {
                     _Debian_Release="Debian_11"
                 else
                     _Debian_Release=""
+                fi
                 __add_deb_repo  "deb http://download.opensuse.org/repositories/security:/zeek/$_Debian_Release/ /" \
                 "security:zeek" \
                 "https://download.opensuse.org/repositories/security:zeek/$_Debian_Release/Release.key"
